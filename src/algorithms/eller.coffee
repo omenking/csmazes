@@ -13,7 +13,7 @@ class Maze.Algorithms.Eller extends Maze.Algorithm
   VERTICAL:   1
 
   constructor: (maze, options) ->
-    super
+    super(args)
 
     @state = new Maze.Algorithms.Eller.State(@maze.width).populate()
     @row = 0

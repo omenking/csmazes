@@ -12,7 +12,7 @@ class Maze.Algorithms.BinaryTree extends Maze.Algorithm
   isCurrent: (x, y) -> @x is x and @y is y
 
   constructor: (maze, options) ->
-    super
+    super(args)
     @x = 0
     @y = 0
 

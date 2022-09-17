@@ -30,7 +30,7 @@ class Maze.Algorithms.BlobbyDivision extends Maze.Algorithm
   WALL : 4
 
   constructor: (maze, options) ->
-    super
+    super(args)
 
     @threshold = options.threshold ? 4
     @growSpeed = options.growSpeed ? 5

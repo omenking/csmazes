@@ -10,7 +10,7 @@ class Maze.Algorithms.Wilson extends Maze.Algorithm
   IN: 0x1000
 
   constructor: (maze, options) ->
-    super
+    super(args)
     @state = 0
     @remaining = @maze.width * @maze.height
     @visits = {}

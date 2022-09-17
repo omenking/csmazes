@@ -11,7 +11,7 @@ class Maze.Algorithms.Kruskal extends Maze.Algorithm
   JOIN:  2
 
   constructor: (maze, options) ->
-    super
+    super(args)
 
     @sets = []
     @edges = []

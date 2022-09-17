@@ -10,7 +10,7 @@ class Maze.Algorithms.HuntAndKill extends Maze.Algorithm
   IN: 0x1000
 
   constructor: (maze, options) ->
-    super
+    super(args)
     @state = 0
 
   isCurrent: (x, y) -> (@x ? x) == x && @y == y

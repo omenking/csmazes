@@ -20,7 +20,7 @@ class Maze.Algorithms.RecursiveDivision extends Maze.Algorithm
       @region.y <= y < @region.y + @region.height
 
   constructor: (maze, options) ->
-    super
+    super(args)
     @stack = [ x: 0, y: 0, width: @maze.width, height: @maze.height ]
     @state = @CHOOSE_REGION
 

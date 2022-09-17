@@ -15,7 +15,7 @@ class Maze.Algorithms.RecursiveBacktracker extends Maze.Algorithm
   DONE:  3
 
   constructor: (maze, options) ->
-    super
+    super(args)
     @state = @START
     @stack = []
 

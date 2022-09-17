@@ -15,7 +15,7 @@ class Maze.Algorithms.Prim extends Maze.Algorithm
   DONE:     3
 
   constructor: (maze, options) ->
-    super
+    super(args)
     @frontierCells = []
     @state = @START
 

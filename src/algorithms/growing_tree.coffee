@@ -10,7 +10,7 @@ class Maze.Algorithms.GrowingTree extends Maze.Algorithm
   QUEUE: 0x1000
 
   constructor: (maze, options) ->
-    super
+    super(args)
     @cells = []
     @state = 0
     @script = new Maze.Algorithms.GrowingTree.Script(options.input ? "random", @rand)

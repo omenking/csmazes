@@ -17,7 +17,7 @@ http://github.com/jamis/csmazes
 # creates a uniform spanning tree or not.
 class Maze.Algorithms.Houston extends Maze.Algorithm
   constructor: (maze, options) ->
-    super
+    super(args)
     @options = options
     @threshold = 2 * @maze.width * @maze.height / 3
 
