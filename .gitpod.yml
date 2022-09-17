@@ -1,0 +1,8 @@
+tasks:
+  - init: |
+      npm install coffescript -g
+      npm install http-server
+
+ports:
+  - port: 3000
+    onOpen: open-browser
