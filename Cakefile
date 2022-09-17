@@ -4,8 +4,8 @@ fs      = require 'fs'
 
 task 'build', 'Build lib/ from src/', ->
   coffee = spawn 'coffee', ['-c', '--bare', '-o', 'lib', 'src']
-  coffee.stdout.on 'data', (data) -> print data.toString()
-  coffee.stderr.on 'data', (data) -> print data.toString()
+  coffee.stdout.on 'data', (data) -> console.log data.toString()
+  coffee.stderr.on 'data', (data) -> console.log data.toString()
 
 task 'concat', 'Merge all generated Javascript files into a single file, maze-all.js', ->
   priorities = "lib/mersenne.js": 1, "lib/maze.js": 2, "lib/widget.js": 3, "lib/algorithms/growing_binary_tree.js": 20
